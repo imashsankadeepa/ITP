@@ -1,0 +1,206 @@
+/* profile.css */
+
+/* Container for the profile section */
+.user-profile {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 5%;;
+  margin-bottom: 5%;
+}
+
+/* Profile header */
+.user-profile-name {
+  font-size: 2.5em; /* Larger size for a more prominent title */
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333; /* Dark grey color for contrast */
+  font-weight: 600; /* Bold weight for emphasis */
+  line-height: 1.2; /* Ensures adequate spacing between lines */
+}
+
+
+/* Profile form styling */
+.user-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.user-profile-form input[type='text'],
+.user-profile-form input[type='email'],
+.user-profile-form input[type='password'] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.user-profile-form input[type='text']:focus,
+.user-profile-form input[type='email']:focus,
+.user-profile-form input[type='password']:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Profile image */
+.user-profile-form img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Upload status */
+.user-profile-emage {
+  text-align: center;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Error and success messages */
+.user-profile-errors-button,
+.user-profile-update-success-button {
+  text-align: center;
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+.user-profile-errors-button {
+  color: #d9534f;
+}
+
+.user-profile-update-success-button {
+  color: #5bc0de;
+}
+
+/* Buttons container */
+#flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Individual buttons */
+.user-profile-delete-button,
+.user-profile-signout-button,
+#navigate-button-addshedule,
+#my-details-button,
+#all-task-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.user-profile-delete-button {
+  background-color: #d9534f;
+  position: absolute;
+  top:100%;
+  left:58%;
+  width: 10%;
+}
+
+.user-profile-signout-button {
+  background-color: #5bc0de;
+  position: absolute;
+  top:90%;
+  left:58%;
+  width: 10%;
+}
+
+#navigate-button-addshedule {
+  background-color: #28a745;
+  position: absolute;
+  top:80%;
+  left:58%;
+  width: 10%;
+}
+
+#my-details-button {
+  background-color: #ffc107;
+  position: absolute;
+  top:70%;
+  left:58%;
+  width: 10%;
+}
+
+#all-task-button {
+  background-color: #17a2b8;
+  position: absolute;
+  top:60%;
+  left:58%;
+  width: 10%;
+}
+
+/* Hover effects for buttons */
+.user-profile-delete-button:hover,
+.user-profile-signout-button:hover,
+#navigate-button-addshedule:hover,
+#my-details-button:hover,
+#all-task-button:hover {
+  opacity: 0.8;
+}
+#staff-id-showing {
+  position: absolute;
+  top:39%;
+  left: 63%;
+  margin-top: 20px;
+  padding: 8px;
+  border: 1px solid #0956dc;
+  border-radius: 8px;
+  background-color: #3d88f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+  max-width: 200px;
+  color: white;
+  margin: 20px auto;
+}
+
+#staff-id-showing h4 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#staff-id-showing .staff-id-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#staff-id-showing .staff-id-list li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#staff-id-showing .staff-id-list li:hover {
+  background-color: #e9ecef;
+  border-color: #ccc;
+  cursor: pointer;
+}
+
+#staff-id-showing .staff-id-list li span {
+  font-weight: 800;
+}

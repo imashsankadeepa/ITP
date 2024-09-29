@@ -1,0 +1,99 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    min-height: 100vh;
+  
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .home-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Reduce opacity for a lighter overlay */
+    z-index: -1;
+    backdrop-filter: blur(2px); /* Reduce the blur effect */
+  }
+  
+  .home-image img {
+    display: none; /* Hide the main image since it's now used as a background */
+  }
+  
+  .home-content {
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Slight background color to enhance text visibility */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  }
+  
+  .home-content h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Poppins', sans-serif; /* Change font for a more modern look */
+  }
+  
+  .home-content p {
+    font-size: 1.5rem;
+    color: #ddd;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    line-height: 1.6;
+  }
+  
+  .home-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .home-btn {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 30px; /* Rounder corners for a modern look */
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .home-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px); /* Slight lift effect on hover */
+  }
+  
+  .manage-staff-btn {
+    background-color: #28a745;
+  }
+  
+  .manage-staff-btn:hover {
+    background-color: #218838;
+  }
+  
+  .voice-command-btn {
+    background-color: #ffc107;
+  }
+  
+  .voice-command-btn:hover {
+    background-color: #e0a800;
+  }
+  
