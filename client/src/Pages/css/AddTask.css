@@ -1,0 +1,88 @@
+/* AddTask.css */
+
+
+#task-body {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+
+.add-task {
+    width: 100%;
+}
+
+#task-form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#main-topic-task-form {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 30px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: #0066cc;
+    box-shadow: 0px 0px 5px rgba(0, 102, 204, 0.5);
+}
+
+button[type="send-task-btn"] {
+    padding: 12px 20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="send-task-btn"]:hover {
+    background-color: #218838;
+}
+
+button[type="send-task-btn"]:active {
+    background-color: #1e7e34;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    #task-body {
+        padding: 20px;
+    }
+
+    button[type="send-task-btn"] {
+        width: 100%;
+    }
+}

@@ -1,0 +1,145 @@
+/* General page background */
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: 'Roboto', sans-serif;
+}
+
+.p-4 {
+  padding: 20px;
+}
+
+#admin-page-names {
+  margin-bottom: 20px;
+}
+
+#admin-page-names a {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#admin-page-names a:hover {
+  background-color: #0056b3;
+}
+
+/* Grid for card layout */
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card Styling */
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-header h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-body {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.card-body img {
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-button-group button {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Delete button */
+#card-delete-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#card-delete-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Modal styling */
+.text-center h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.modal-button-group .btn-danger {
+  background-color: #e3342f;
+  color: white;
+}
+
+.modal-button-group .btn-cancel {
+  background-color: #6c757d;
+  color: white;
+}
+/* Styling for the Main Heading */
+#allstafftopic {
+  font-size: 2.5rem;            /* Large font size */
+  font-weight: 800;             /* Bold font weight */
+  color: #2c3e50;               /* Dark blue-grey color */
+  text-transform: uppercase;    /* All uppercase for a modern look */
+  letter-spacing: 2px;          /* Increase space between letters */
+  text-align: center;           /* Center the heading */
+  margin-bottom: 2rem;          /* Add spacing below the heading */
+  position: relative;
+}
+
+#allstafftopic::before {
+  content: '';
+  width: 60px;                  /* Width of the underline */
+  height: 5px;                  /* Thickness of the underline */
+  background-color: #e74c3c;    /* Bright red underline */
+  position: absolute;
+  bottom: -10px;                /* Place the underline just below the text */
+  left: 50%;
+  transform: translateX(-50%);  /* Center the underline */
+  border-radius: 10px;          /* Smooth the underline corners */
+}
+
+#allstafftopic:hover {
+  color: #e74c3c;               /* Change heading color on hover */
+  transition: color 0.3s ease;  /* Smooth hover transition */
+}

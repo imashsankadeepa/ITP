@@ -1,0 +1,139 @@
+/* Container styling */
+.task-list-container {
+  margin: 20px auto;
+  width: 90%;
+  padding: 20px;
+  background-color: #f3f4f6; /* Slightly darker background */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+/* Heading */
+.task-list-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #111827;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700; /* Bold heading */
+}
+
+/* Subheading */
+#select-task-topic {
+  font-size: 1.5rem;
+  color: #3b82f6; /* Brighter blue */
+  background-color: #e0f2fe;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 500; /* Medium weight for subheading */
+}
+
+/* Task list */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Task item card */
+.task-item {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Task details */
+.task-item-details h4 {
+  font-size: 1.8rem;
+  color: #1f2937;
+  margin-bottom: 10px;
+  font-weight: 600; /* Slightly bolder for task titles */
+}
+
+.task-item-details p {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 5px;
+}
+
+/* Task actions */
+.task-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Update button */
+.task-item-update-btn {
+  background-color: #34d399; /* More vibrant green */
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-item-update-btn:hover {
+  background-color: #10b981;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Status button */
+.task-item-status-btn {
+  background-color: #e5e7eb; /* Soft grey for pending */
+  color: #1f2937;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: not-allowed;
+  transition: background-color 0.3s ease;
+}
+
+.task-item-status-btn.completed {
+  background-color: #34d399;
+  color: white;
+}
+
+.task-item-status-btn.pending {
+  background-color: #f59e0b; /* Bright orange for pending */
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-item-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .task-item-update-btn, .task-item-status-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+}

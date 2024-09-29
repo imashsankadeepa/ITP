@@ -1,0 +1,124 @@
+/* Main container styles */
+.nav {
+  background-color: rgba(46, 50, 44, 0.574); /* Adjust the transparency for a subtle effect */
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(5px); /* Apply blur effect to the background */
+  border: 2px solid rgba(0, 0, 0, 0.629);  /* Green border for a fresh, appealing look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
+}
+
+
+/* Flex container styles */
+.navbardetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Header subtitle */
+#h3 {
+  color: #f0f0f0; /* Light gray for contrast */
+  font-weight: 300;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Deeper shadow for better readability */
+  font-family: 'Montserrat', sans-serif; /* Modern, clean font */
+}
+
+/* Logo styles */
+.twebpagename {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #4CAF50; /* Green color matching the border for a cohesive look */
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Stronger shadow for emphasis */
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 1rem;
+  margin-left:-10%;
+
+}
+
+/* Navigation list styles */
+.other-topics {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+ margin-right: -10%;
+}
+
+.other-topics a {
+  text-decoration: none;
+  color: #f0f0f0; /* Light gray text to match the subtitle */
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.other-topics li:hover {
+  color: #4CAF50; /* Green color on hover to match the logo and border */
+  transform: translateY(-3px); /* Slight lift on hover for a dynamic effect */
+}
+
+/* Profile picture styles */
+.h-7 {
+  height: 2.5rem;
+}
+
+.w-7 {
+  width: 2.5rem;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.object-cover {
+  object-fit: cover;
+  border: 2px solid #f0f0f0; /* Light gray border to match text colors */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .twebpagename {
+    font-size: 2rem; /* Reduce size for smaller screens */
+    padding-left: 0;
+    text-align: center;
+  
+  }
+
+  #h3 {
+    font-size: 1.3rem; /* Reduce subtitle size */
+    top: 60%;
+  }
+
+  .other-topics {
+    flex-direction: column;
+    gap: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nav {
+    height: auto;
+    padding: 1rem 2rem;
+  }
+}
